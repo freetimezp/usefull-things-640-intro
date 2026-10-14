@@ -1,18 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=DM+Mono:wght@300&display=swap"
+            rel="stylesheet"
+        />
 
-<body>
-    start
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.css"
+        />
 
-    <script src="./assets/js/main.js"></script>
-</body>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Project</title>
+    </head>
 
+    <body>
+        <section class="intro">
+            <p class="eyebrow">Scroll to explore</p>
+            <h1>Minerals<br />we extract</h1>
+        </section>
+
+        <section class="minerals-stage">
+            <div class="minerals-inner">
+                <div class="minerals-left">
+                    <div class="badges">
+                        <span class="badge">S.03</span>
+                        <h2 class="badge is-dark">Minerals</h2>
+                    </div>
+                    <div class="minerals-list">
+                        <p class="eyebrow">Minerals we extract</p>
+                        <div class="mineral-names">
+                            <span class="mineral-name is-active">Gold</span>
+                            <span class="mineral-name">Silver</span>
+                            <span class="mineral-name">Lead</span>
+                            <span class="mineral-name">Copper</span>
+                            <span class="mineral-name">Zinc</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="minerals-center">
+                    <svg
+                        class="ring ring-base"
+                        viewBox="0 0 616 616"
+                        aria-hidden="true"
+                    >
+                        <g></g>
+                    </svg>
+                    <svg
+                        class="ring ring-active"
+                        viewBox="0 0 616 616"
+                        aria-hidden="true"
+                    >
+                        <g></g>
+                    </svg>
+                    <canvas class="minerals-canvas"></canvas>
+                    <div class="minerals-fade"></div>
+                </div>
+
+                <div class="minerals-right">
+                    <div class="mineral-label eyebrow" aria-hidden="true">
+                        <div class="label-line">
+                            <div class="label-slider">
+                                <span>AU [#79]</span>
+                                <span>AG [#47]</span>
+                                <span>PB [#82]</span>
+                                <span>CU [#29]</span>
+                                <span>ZN [#30]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="outro"></section>
+
+        <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
